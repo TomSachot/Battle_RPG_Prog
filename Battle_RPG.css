@@ -1,0 +1,151 @@
+body{
+	background-image: url(battleback2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: local;
+}
+#lw { 
+	display: flex;
+	background-color: white;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+	color: #FFA500;
+	border: solid;
+	border-radius: 10px;
+	width: 400px;
+	font-size: 40px;
+	flex-direction: row;
+	justify-content: center;
+}
+#Monstre1{
+	display: flex;
+	background-image: url(monstre.png);
+	background-repeat: no-repeat;
+	border: 0px white;
+	padding: 150px;
+	background-size: contain;
+	position: fixed;
+	left: 40%;
+}
+#robot{
+	display: flex;
+	justify-content: center;
+	background-color: #ABABAB;
+	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+	color: #FF0000;
+	border: 1px solid red;
+	border-radius: 10px;
+	width: 200px;
+	font-size:  20px;
+}
+#PVmonstre{
+	display: flex;
+	justify-content: center;
+	background-color: #ABABAB;
+	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+	color:red;
+	border: 1px solid red;
+	border-radius: 10px;
+	width: 200px;
+	font-size: 20px;
+}
+#heros{
+	display: flex;
+	justify-content: center;
+	background-color: #ABABAB;
+	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+	color: #0000FF;
+	border: 1px solid blue;
+	border-radius: 10px;
+	width: 200px;
+	font-size: 20px;
+}
+#PV1{
+	display: flex;
+	justify-content: center;
+	background-color: #ABABAB;
+	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+	color: #0000FF;
+	border: 1px solid blue;
+	border-radius: 10px;
+	width: 200px;
+	font-size: 20px;
+}
+#Mana1{
+	display: flex;
+	justify-content: center;
+	background-color: #ABABAB;
+	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+	color: #0000FF;
+	border: 1px solid blue;
+	border-radius: 10px;
+	width: 200px;
+	font-size: 20px;
+}
+#Attaque1{
+	justify-content: center;
+	background-color:orange;
+	border-radius: 7px;
+	border: 3px solid black;
+	cursor: pointer;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	height: 30px;
+	width: 95px;
+	box-shadow: 1px 1px 1px black;
+}
+#Défense1{
+	justify-content: center;
+	background-color:orange;
+	border-radius: 7px;
+	border: 3px solid black;
+	cursor: pointer;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	height: 30px;
+	width: 95px;
+	box-shadow: 1px 1px 1px black;
+}
+#Actionperso1{
+	justify-content: center;
+	background-color:orange;
+	border-radius: 7px;
+	border: 3px solid black;
+	cursor: pointer;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	height: 30px;
+	width: 95px;
+	box-shadow: 1px 1px 1px black;
+}
+#Monstre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: flex-start;
+	background-color: white;
+	border: 2px solid red;
+	border-radius: 10px;
+	height: 130px;
+	width: 200px;
+}
+#Perso1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: flex-start;
+	background-color: white;
+	border: 2px solid #0000FF;
+	border-radius: 10px;
+	height: 250px;
+	width: 200px;
+}
+#individu{
+	display: flex;
+	justify-content: space-between;
+}
