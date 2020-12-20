@@ -20,7 +20,12 @@ atk.onclick = function(){
     texte.innerHTML = "Vous causez des dégâts au Révélator ! Quelle est votre prochaine action ?";
     pvmonstre.value = pvmonstre.value-atkperso1;
     pvmonstre.innerHTML = pvmonstre.value;
-    pvperso1 = pvperso1 - atkmonstre;
-    document.getElementById("affichePV").innerHTML=pvperso1;    
+    pvperso1.value = pvperso1.value-atkmonstre;
+    pvperso1.innerHTML = pvperso1.value; 
+}
+def.onclick = function(){
+    texte.innerHTML = "Vous êtes à couvert mais aussi légèrement blessé... Quelle est votre prochaine action ?"
+    pvperso1.value = pvperso1.value-(atkmonstre*defperso1);
+    pvperso1.innerHTML = pvperso1.value;
 }
 
