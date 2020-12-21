@@ -18,10 +18,11 @@ manaperso1.value = 30
 manaperso1.innerHTML = manaperso1.value
 atkperso1.value = 27
 atkmonstre.value = 12
+coutmana = 9
 
 
 atk.onclick = function(){
-    texte.innerHTML = "Vous causez des dégâts au Révélator ! Quelle est votre prochaine action ?";
+    texte.innerHTML = "Vous causez des dégâts au Révélator !";
     pvmonstre.value = pvmonstre.value-atkperso1;
     pvmonstre.innerHTML = pvmonstre.value;
     pvperso1.value = pvperso1.value-atkmonstre;
@@ -35,9 +36,12 @@ atk.onclick = function(){
         document.getElementById("Monstre1").style.backgroundImage = "url(fumee.png)";
         pvmonstre.innerHTML = "0";
     }
+    if (pvmonstre.value <= atkperso1){
+        atkmonstre = 0;
+    }
 }
 def.onclick = function(){
-    texte.innerHTML = "Vous êtes à couvert mais aussi légèrement blessé... Quelle est votre prochaine action ?"
+    texte.innerHTML = "Vous êtes à couvert mais aussi légèrement blessé..."
     pvperso1.value = pvperso1.value-(atkmonstre*defperso1);
     pvperso1.innerHTML = pvperso1.value;
     if (pvperso1.value <= 0){
@@ -46,16 +50,19 @@ def.onclick = function(){
     }
 }
 ulti1.onclick = function(){
+    if (manaperso1.value > coutmana){
     texte.innerHTML = "Eli se soigne avec un kit de soins !"
     pvperso1.value = pvperso1.value + 23;
     pvperso1.innerHTML = pvperso1.value;
     manaperso1.value = manaperso1-coutmana;
     manaperso1.innerHTML = manaperso1.value;
+    }
     if (pvperso1.value > 100){
         pvperso1.value = 100;
         pvperso1.innerHTML = pvperso1.value;
     }
-
-
+    if (manaperso1.value < coutmana){
+        texte.innerHTML = "Vous n'avez plus de médikits sous la main...";
+    }
 }
 
