@@ -33,7 +33,7 @@ atk.onclick = function(){
     }
     if (pvmonstre.value <= 0){
         texte.innerHTML = "Rentrez faire votre rapport, la région est sauvée !";
-        document.getElementById("Monstre1").style.backgroundImage = "url(fumee.png)";
+        document.getElementById("Monstre1").style.backgroundImage = "url(explosion.png)";
         pvmonstre.innerHTML = "0";
     }
     if (pvmonstre.value <= atkperso1){
@@ -54,7 +54,7 @@ ulti1.onclick = function(){
     texte.innerHTML = "Eli se soigne avec un kit de soins !"
     pvperso1.value = pvperso1.value + 23;
     pvperso1.innerHTML = pvperso1.value;
-    manaperso1.value = manaperso1-coutmana;
+    manaperso1.value = manaperso1.value-coutmana;
     manaperso1.innerHTML = manaperso1.value;
     }
     if (pvperso1.value > 100){
